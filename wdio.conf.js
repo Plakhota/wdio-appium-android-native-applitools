@@ -61,6 +61,7 @@ exports.config = {
         // capabilities for local Appium web tests on an Android Emulator
         platformName: 'Android', // or "iOS"
         browserName: '', // or "Safari"
+        "appium:autoGrantPermissions": true,
         "appium:deviceName": 'emulator-5554', // or "iPhone Simulator"
         // "appium:app": '/Users/plahota/Desktop/Customers/Jaguar/Range Rover_1.0.0-alpha02.apk', 
         "appium:appPackage": 'com.jaguarlandrover.rangerover.app',
