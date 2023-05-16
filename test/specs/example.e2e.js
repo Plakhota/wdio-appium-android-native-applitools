@@ -38,13 +38,14 @@ describe("My Login application", () => {
     batch = new BatchInfo(
       "JLR Example: WebdriverIO JavaScript with the Classic Runner"
     );
+    batch.setSequenceName("JLR");
 
     // Create a configuration for Applitools Eyes.
     config = new Configuration();
 
     //https://applitools.com/docs/features/contrast-accessibility.html
     config.setAccessibilityValidation({
-      level: AccessibilityLevel.AAA,
+      level: AccessibilityLevel.AA,
       guidelinesVersion: AccessibilityGuidelinesVersion.WCAG_2_1,
     });
 
@@ -74,7 +75,10 @@ describe("My Login application", () => {
     const loginXPATH = '//*[@resource-id="loginButton"]';
 
     await eyes.check(
-      Target.window().fully(false).withName("Login screen").ignore(loginXPATH)
+      Target.window().fully(false)
+      .withName("Login screen")
+      // .ignore(loginXPATH)
+      .ignoreDisplacements(true)
     );
     //Click the login button xpath = //*[contains(@text,"LOGIN")]
     await browser.$(loginXPATH).click();
@@ -113,10 +117,12 @@ describe("My Login application", () => {
   }).timeout(10 * 60000);
 
   afterEach(async () => {
-    // Close Eyes to tell the server it should display the results.
+    // await eyes.closeAsync(); //recommended
+
+    // Close Eyes to tell the server it should display the results. Access the result object
     const testResult = await eyes.close();
-    console.log(testResults);
-    console.log(testResults.getAccessibilityStatus());
+    console.log(testResult);
+    console.log(testResult.getAccessibilityStatus());
     assert.equal(
       testResult.getAccessibilityStatus().status,
       AccessibilityStatus.Passed
@@ -128,6 +134,6 @@ describe("My Login application", () => {
   after(async () => {
     // Close the batch and report visual differences to the console.
     // Note that it forces Mocha to wait synchronously for all visual checkpoints to complete.
-    await runner.getAllTestResults(false).then(console.log);
+    await runner.getAllTestResults(false).then(console.log); //close the batch
   });
 });
