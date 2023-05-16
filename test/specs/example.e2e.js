@@ -89,6 +89,7 @@ describe("My Login application", () => {
         .matchLevel(MatchLevel.Layout)
     );
 
+    //await browser.$('//android.widget.Button').click(); //The Xpath may be non-specific
     //Fetch profile button using Applitools Visual Locator and click
     const regionsMap = await eyes.locate({ locatorNames: ["profile"] });
     const regionMapProfile = regionsMap["profile"];
