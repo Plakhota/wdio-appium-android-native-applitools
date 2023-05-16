@@ -63,6 +63,7 @@ exports.config = {
         browserName: '', // or "Safari"
         "appium:autoGrantPermissions": true,
         "appium:deviceName": 'emulator-5554', // or "iPhone Simulator"
+        // "appium:app": '/Users/plahota/Desktop/Customers/Jaguar/dist/ready.apk',
         // "appium:app": '/Users/plahota/Desktop/Customers/Jaguar/Range Rover_1.0.0-alpha02.apk', 
         "appium:appPackage": 'com.jaguarlandrover.rangerover.app',
         "appium:appActivity": 'com.jaguarlandrover.app.main.MainActivity',
@@ -143,6 +144,9 @@ exports.config = {
     // Make sure you have the wdio adapter package for the specific framework installed
     // before running any tests.
     framework: 'mocha',
+    mochaOpts: {
+        timeout: 5 * 60000,
+    },
     //
     // The number of times to retry the entire specfile when it fails as a whole
     // specFileRetries: 1,

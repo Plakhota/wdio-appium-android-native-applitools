@@ -1,0 +1,394 @@
+
+Execution of 1 workers started at 2023-05-14T10:58:44.348Z
+
+2023-05-14T10:58:44.384Z INFO @wdio/cli:launcher: Run onPrepare hook
+2023-05-14T10:58:45.630Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2023-05-14T10:58:45.631Z INFO @wdio/local-runner: Start worker 0-0 with arg: 
+[0-0] 2023-05-14T10:58:46.759Z INFO @wdio/local-runner: Run worker command: run
+[0-0] RUNNING in Android - file:///test/specs/example.e2e.js
+[0-0] 2023-05-14T10:58:48.356Z INFO webdriver: Initiate new session using the WebDriver protocol
+[0-0] 2023-05-14T10:58:48.512Z INFO webdriver: [POST] http://127.0.0.1:4723/session
+[0-0] 2023-05-14T10:58:48.513Z INFO webdriver: DATA {
+[0-0]   capabilities: {
+[0-0]     alwaysMatch: {
+[0-0]       platformName: 'Android',
+[0-0]       browserName: '',
+[0-0]       'appium:autoGrantPermissions': true,
+[0-0]       'appium:deviceName': 'emulator-5554',
+[0-0]       'appium:appPackage': 'com.jaguarlandrover.rangerover.app',
+[0-0]       'appium:appActivity': 'com.jaguarlandrover.app.main.MainActivity',
+[0-0]       'appium:automationName': 'UiAutomator2'
+[0-0]     },
+[0-0]     firstMatch: [ {} ]
+[0-0]   },
+[0-0]   desiredCapabilities: {
+[0-0]     platformName: 'Android',
+[0-0]     browserName: '',
+[0-0]     'appium:autoGrantPermissions': true,
+[0-0]     'appium:deviceName': 'emulator-5554',
+[0-0]     'appium:appPackage': 'com.jaguarlandrover.rangerover.app',
+[0-0]     'appium:appActivity': 'com.jaguarlandrover.app.main.MainActivity',
+[0-0]     'appium:automationName': 'UiAutomator2'
+[0-0]   }
+[0-0] }
+[0-0] 2023-05-14T10:58:55.109Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2023-05-14T10:58:55.110Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/execute/sync
+[0-0] 2023-05-14T10:58:55.111Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T10:58:55.173Z INFO webdriver: Retrying 1/3
+[0-0] 2023-05-14T10:58:55.174Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/execute/sync
+[0-0] 2023-05-14T10:58:55.175Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T10:58:55.196Z INFO webdriver: Retrying 2/3
+[0-0] 2023-05-14T10:58:55.196Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/execute/sync
+[0-0] 2023-05-14T10:58:55.196Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T10:58:55.211Z INFO webdriver: Retrying 3/3
+[0-0] 2023-05-14T10:58:55.211Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/execute/sync
+[0-0] 2023-05-14T10:58:55.212Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T10:58:56.332Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2023-05-14T10:58:56.336Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/execute/sync
+[0-0] 2023-05-14T10:58:56.336Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T10:58:56.350Z INFO webdriver: Retrying 1/3
+[0-0] 2023-05-14T10:58:56.350Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/execute/sync
+[0-0] 2023-05-14T10:58:56.350Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T10:58:56.363Z INFO webdriver: Retrying 2/3
+[0-0] 2023-05-14T10:58:56.363Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/execute/sync
+[0-0] 2023-05-14T10:58:56.363Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T10:58:56.376Z INFO webdriver: Retrying 3/3
+[0-0] 2023-05-14T10:58:56.376Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/execute/sync
+[0-0] 2023-05-14T10:58:56.376Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T10:58:56.390Z INFO webdriver: COMMAND getSession()
+[0-0] 2023-05-14T10:58:56.391Z INFO webdriver: [GET] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89
+[0-0] 2023-05-14T10:58:56.407Z INFO webdriver: RESULT {
+[0-0]   platform: 'LINUX',
+[0-0]   webStorageEnabled: false,
+[0-0]   takesScreenshot: true,
+[0-0]   javascriptEnabled: true,
+[0-0]   databaseEnabled: false,
+[0-0]   networkConnectionEnabled: true,
+[0-0]   locationContextEnabled: false,
+[0-0]   warnings: {},
+[0-0]   desired: {
+[0-0]     platformName: 'Android',
+[0-0]     browserName: '',
+[0-0]     autoGrantPermissions: true,
+[0-0]     deviceName: 'emulator-5554',
+[0-0]     appPackage: 'com.jaguarlandrover.rangerover.app',
+[0-0]     appActivity: 'com.jaguarlandrover.app.main.MainActivity',
+[0-0]     automationName: 'UiAutomator2'
+[0-0]   },
+[0-0]   platformName: 'Android',
+[0-0]   browserName: '',
+[0-0]   autoGrantPermissions: true,
+[0-0]   deviceName: 'emulator-5554',
+[0-0]   appPackage: 'com.jaguarlandrover.rangerover.app',
+[0-0]   appActivity: 'com.jaguarlandrover.app.main.MainActivity',
+[0-0]   automationName: 'UiAutomator2',
+[0-0]   deviceUDID: 'emulator-5554',
+[0-0]   deviceApiLevel: 33,
+[0-0]   platformVersion: '13',
+[0-0]   deviceScreenSize: '1080x1920',
+[0-0]   deviceScreenDensity: 420,
+[0-0]   deviceModel: 'sdk_gphone64_x86_64',
+[0-0]   deviceManufacturer: 'Google',
+[0-0]   pixelRatio: 2.625,
+[0-0]   statBarHeight: 63,
+[0-0]   viewportRect: { left: 0, top: 63, width: 1080, height: 1794 },
+[0-0]   lastScrollData: null
+[0-0] }
+[0-0] 2023-05-14T10:58:56.409Z INFO webdriver: COMMAND getContext()
+[0-0] 2023-05-14T10:58:56.410Z INFO webdriver: [GET] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/context
+[0-0] 2023-05-14T10:58:56.418Z INFO webdriver: RESULT NATIVE_APP
+[0-0] 2023-05-14T10:58:56.420Z INFO webdriver: COMMAND executeScript("mobile:shell", <object>)
+[0-0] 2023-05-14T10:58:56.421Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/execute/sync
+[0-0] 2023-05-14T10:58:56.421Z INFO webdriver: DATA {
+[0-0]   script: 'mobile:shell',
+[0-0]   args: [
+[0-0]     {
+[0-0]       command: "dumpsys window | grep 'mCurrentRotation' | cut -d = -f2"
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2023-05-14T10:58:56.441Z INFO webdriver: Retrying 1/3
+[0-0] 2023-05-14T10:58:56.441Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/execute/sync
+[0-0] 2023-05-14T10:58:56.441Z INFO webdriver: DATA {
+[0-0]   script: 'mobile:shell',
+[0-0]   args: [
+[0-0]     {
+[0-0]       command: "dumpsys window | grep 'mCurrentRotation' | cut -d = -f2"
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2023-05-14T10:58:56.454Z INFO webdriver: Retrying 2/3
+[0-0] 2023-05-14T10:58:56.454Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/execute/sync
+[0-0] 2023-05-14T10:58:56.455Z INFO webdriver: DATA {
+[0-0]   script: 'mobile:shell',
+[0-0]   args: [
+[0-0]     {
+[0-0]       command: "dumpsys window | grep 'mCurrentRotation' | cut -d = -f2"
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2023-05-14T10:58:56.468Z INFO webdriver: Retrying 3/3
+[0-0] 2023-05-14T10:58:56.468Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/execute/sync
+[0-0] 2023-05-14T10:58:56.468Z INFO webdriver: DATA {
+[0-0]   script: 'mobile:shell',
+[0-0]   args: [
+[0-0]     {
+[0-0]       command: "dumpsys window | grep 'mCurrentRotation' | cut -d = -f2"
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2023-05-14T10:58:56.481Z INFO webdriver: COMMAND getOrientation()
+[0-0] 2023-05-14T10:58:56.482Z INFO webdriver: [GET] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/orientation
+[0-0] 2023-05-14T10:58:56.497Z INFO webdriver: RESULT PORTRAIT
+[0-0] 2023-05-14T10:58:56.498Z INFO webdriver: COMMAND getWindowRect()
+[0-0] 2023-05-14T10:58:56.498Z INFO webdriver: [GET] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/window/rect
+[0-0] 2023-05-14T10:58:56.513Z INFO webdriver: RESULT { width: 1080, height: 1857, x: 0, y: 0 }
+[0-0] 2023-05-14T10:58:56.514Z INFO webdriver: COMMAND getSystemBars()
+[0-0] 2023-05-14T10:58:56.515Z INFO webdriver: [GET] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/appium/device/system_bars
+[0-0] 2023-05-14T10:58:56.584Z INFO webdriver: RESULT {
+[0-0]   statusBar: { visible: true, x: 0, y: 0, width: null, height: 1 },
+[0-0]   navigationBar: { visible: true, x: 0, y: 0, width: null, height: 1 }
+[0-0] }
+[0-0] 2023-05-14T10:58:59.516Z INFO webdriver: COMMAND findElement("xpath", "//*[contains(@text,"LOGIN")]")
+[0-0] 2023-05-14T10:58:59.517Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/element
+[0-0] 2023-05-14T10:58:59.517Z INFO webdriver: DATA { using: 'xpath', value: '//*[contains(@text,"LOGIN")]' }
+[0-0] 2023-05-14T10:58:59.693Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0182-0000-002600000007',
+[0-0]   ELEMENT: '00000000-0000-0182-0000-002600000007'
+[0-0] }
+[0-0] 2023-05-14T10:58:59.700Z INFO webdriver: COMMAND elementClick("00000000-0000-0182-0000-002600000007")
+[0-0] 2023-05-14T10:58:59.701Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/element/00000000-0000-0182-0000-002600000007/click
+[0-0] 2023-05-14T10:59:00.765Z INFO webdriver: RESULT null
+[0-0] 2023-05-14T10:59:00.766Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="profileButton"]")
+[0-0] 2023-05-14T10:59:00.766Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/element
+[0-0] 2023-05-14T10:59:00.766Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="profileButton"]' }
+[0-0] 2023-05-14T10:59:01.502Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/plahota/Desktop/Customers/Jaguar/wdio-appium/node_modules/appium/node_modules/appium-android-driver/lib/commands/find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/plahota/Desktop/Customers/Jaguar/wdio-appium/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/plahota/Desktop/Customers/Jaguar/wdio-appium/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:53:10)'
+[0-0] }
+[0-0] 2023-05-14T10:59:01.508Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="profileButton"]")
+[0-0] 2023-05-14T10:59:01.509Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/elements
+[0-0] 2023-05-14T10:59:01.509Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="profileButton"]' }
+[0-0] 2023-05-14T10:59:01.981Z INFO webdriver: RESULT []
+[0-0] 2023-05-14T10:59:02.009Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="profileButton"]")
+[0-0] 2023-05-14T10:59:02.011Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/elements
+[0-0] 2023-05-14T10:59:02.011Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="profileButton"]' }
+[0-0] 2023-05-14T10:59:02.681Z INFO webdriver: RESULT []
+[0-0] 2023-05-14T10:59:02.686Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="profileButton"]")
+[0-0] 2023-05-14T10:59:02.687Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/elements
+[0-0] 2023-05-14T10:59:02.687Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="profileButton"]' }
+[0-0] 2023-05-14T10:59:02.728Z INFO webdriver: RESULT []
+[0-0] 2023-05-14T10:59:03.007Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="profileButton"]")
+[0-0] 2023-05-14T10:59:03.008Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/elements
+[0-0] 2023-05-14T10:59:03.008Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="profileButton"]' }
+[0-0] 2023-05-14T10:59:03.050Z INFO webdriver: RESULT []
+[0-0] 2023-05-14T10:59:03.508Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="profileButton"]")
+[0-0] 2023-05-14T10:59:03.509Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/elements
+[0-0] 2023-05-14T10:59:03.509Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="profileButton"]' }
+[0-0] 2023-05-14T10:59:03.678Z INFO webdriver: RESULT []
+[0-0] 2023-05-14T10:59:04.007Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="profileButton"]")
+[0-0] 2023-05-14T10:59:04.008Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/elements
+[0-0] 2023-05-14T10:59:04.008Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="profileButton"]' }
+[0-0] 2023-05-14T10:59:04.129Z INFO webdriver: RESULT []
+[0-0] 2023-05-14T10:59:04.507Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="profileButton"]")
+[0-0] 2023-05-14T10:59:04.508Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/elements
+[0-0] 2023-05-14T10:59:04.508Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="profileButton"]' }
+[0-0] 2023-05-14T10:59:04.618Z INFO webdriver: RESULT []
+[0-0] 2023-05-14T10:59:05.007Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="profileButton"]")
+[0-0] 2023-05-14T10:59:05.008Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/elements
+[0-0] 2023-05-14T10:59:05.008Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="profileButton"]' }
+[0-0] 2023-05-14T10:59:05.116Z INFO webdriver: RESULT []
+[0-0] 2023-05-14T10:59:05.507Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="profileButton"]")
+[0-0] 2023-05-14T10:59:05.508Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/elements
+[0-0] 2023-05-14T10:59:05.508Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="profileButton"]' }
+[0-0] 2023-05-14T10:59:05.603Z INFO webdriver: RESULT []
+[0-0] 2023-05-14T10:59:06.007Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="profileButton"]")
+[0-0] 2023-05-14T10:59:06.008Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/elements
+[0-0] 2023-05-14T10:59:06.008Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="profileButton"]' }
+[0-0] 2023-05-14T10:59:06.146Z INFO webdriver: RESULT []
+[0-0] 2023-05-14T10:59:06.508Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="profileButton"]")
+[0-0] 2023-05-14T10:59:06.509Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/elements
+[0-0] 2023-05-14T10:59:06.509Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="profileButton"]' }
+[0-0] 2023-05-14T10:59:06.549Z INFO webdriver: RESULT []
+[0-0] 2023-05-14T10:59:07.008Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="profileButton"]")
+[0-0] 2023-05-14T10:59:07.009Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/elements
+[0-0] 2023-05-14T10:59:07.009Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="profileButton"]' }
+[0-0] 2023-05-14T10:59:07.050Z INFO webdriver: RESULT []
+[0-0] 2023-05-14T10:59:07.508Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="profileButton"]")
+[0-0] 2023-05-14T10:59:07.509Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/elements
+[0-0] 2023-05-14T10:59:07.509Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="profileButton"]' }
+[0-0] 2023-05-14T10:59:07.548Z INFO webdriver: RESULT []
+[0-0] 2023-05-14T10:59:08.010Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="profileButton"]")
+[0-0] 2023-05-14T10:59:08.011Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/elements
+[0-0] 2023-05-14T10:59:08.012Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="profileButton"]' }
+[0-0] 2023-05-14T10:59:08.050Z INFO webdriver: RESULT []
+[0-0] 2023-05-14T10:59:08.509Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="profileButton"]")
+[0-0] 2023-05-14T10:59:08.510Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/elements
+[0-0] 2023-05-14T10:59:08.510Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="profileButton"]' }
+[0-0] 2023-05-14T10:59:08.551Z INFO webdriver: RESULT []
+[0-0] 2023-05-14T10:59:09.007Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="profileButton"]")
+[0-0] 2023-05-14T10:59:09.008Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/elements
+[0-0] 2023-05-14T10:59:09.008Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="profileButton"]' }
+[0-0] 2023-05-14T10:59:09.044Z INFO webdriver: RESULT []
+[0-0] 2023-05-14T10:59:09.508Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="profileButton"]")
+[0-0] 2023-05-14T10:59:09.509Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/elements
+[0-0] 2023-05-14T10:59:09.509Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="profileButton"]' }
+[0-0] 2023-05-14T10:59:09.547Z INFO webdriver: RESULT []
+[0-0] 2023-05-14T10:59:10.008Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="profileButton"]")
+[0-0] 2023-05-14T10:59:10.009Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/elements
+[0-0] 2023-05-14T10:59:10.009Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="profileButton"]' }
+[0-0] 2023-05-14T10:59:10.049Z INFO webdriver: RESULT []
+[0-0] 2023-05-14T10:59:10.508Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="profileButton"]")
+[0-0] 2023-05-14T10:59:10.509Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/elements
+[0-0] 2023-05-14T10:59:10.509Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="profileButton"]' }
+[0-0] 2023-05-14T10:59:10.550Z INFO webdriver: RESULT []
+[0-0] 2023-05-14T10:59:11.008Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="profileButton"]")
+[0-0] 2023-05-14T10:59:11.009Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/elements
+[0-0] 2023-05-14T10:59:11.009Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="profileButton"]' }
+[0-0] 2023-05-14T10:59:11.070Z INFO webdriver: RESULT []
+[0-0] Error in "My Login application.opens the app in the android phone2"
+Error: Can't call click on element with selector "//*[@resource-id="profileButton"]" because element wasn't found
+    at async Context.<anonymous> (/Users/plahota/Desktop/Customers/Jaguar/wdio-appium/test/specs/example.e2e.js:106:9)
+[0-0] 2023-05-14T10:59:11.513Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2023-05-14T10:59:11.514Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/execute/sync
+[0-0] 2023-05-14T10:59:11.514Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T10:59:11.530Z INFO webdriver: Retrying 1/3
+[0-0] 2023-05-14T10:59:11.530Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/execute/sync
+[0-0] 2023-05-14T10:59:11.530Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T10:59:11.542Z INFO webdriver: Retrying 2/3
+[0-0] 2023-05-14T10:59:11.543Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/execute/sync
+[0-0] 2023-05-14T10:59:11.543Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T10:59:11.557Z INFO webdriver: Retrying 3/3
+[0-0] 2023-05-14T10:59:11.557Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/execute/sync
+[0-0] 2023-05-14T10:59:11.557Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T10:59:11.578Z INFO webdriver: COMMAND executeScript("applitools:metadata", <object>)
+[0-0] 2023-05-14T10:59:11.579Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/execute/sync
+[0-0] 2023-05-14T10:59:11.579Z INFO webdriver: DATA { script: 'applitools:metadata', args: [ undefined ] }
+[0-0] 2023-05-14T10:59:11.593Z INFO webdriver: Retrying 1/3
+[0-0] 2023-05-14T10:59:11.593Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/execute/sync
+[0-0] 2023-05-14T10:59:11.593Z INFO webdriver: DATA { script: 'applitools:metadata', args: [ undefined ] }
+[0-0] 2023-05-14T10:59:11.605Z INFO webdriver: Retrying 2/3
+[0-0] 2023-05-14T10:59:11.605Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/execute/sync
+[0-0] 2023-05-14T10:59:11.605Z INFO webdriver: DATA { script: 'applitools:metadata', args: [ undefined ] }
+[0-0] 2023-05-14T10:59:11.617Z INFO webdriver: Retrying 3/3
+[0-0] 2023-05-14T10:59:11.618Z INFO webdriver: [POST] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89/execute/sync
+[0-0] 2023-05-14T10:59:11.618Z INFO webdriver: DATA { script: 'applitools:metadata', args: [ undefined ] }
+[0-0] TestResultsSummaryData {
+[0-0]   _summary: {
+[0-0]     results: [ [Object] ],
+[0-0]     passed: 0,
+[0-0]     unresolved: 1,
+[0-0]     failed: 0,
+[0-0]     exceptions: 1,
+[0-0]     mismatches: 0,
+[0-0]     missing: 1,
+[0-0]     matches: 0
+[0-0]   },
+[0-0]   _deleteTest: [Function: deleteTest]
+[0-0] }
+[0-0] 2023-05-14T10:59:15.779Z INFO webdriver: COMMAND deleteSession()
+[0-0] 2023-05-14T10:59:15.780Z INFO webdriver: [DELETE] http://127.0.0.1:4723/session/7c352433-e3fa-43a6-a15b-84cd11edff89
+[0-0] 2023-05-14T10:59:15.975Z INFO webdriver: RESULT null
+[0-0] FAILED in Android - file:///test/specs/example.e2e.js
+2023-05-14T10:59:16.171Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2023-05-14T10:59:16.174Z INFO @wdio/cli:launcher: Run onComplete hook
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[undefined Android #0-0] Running: undefined on Android
+[undefined Android #0-0] Session ID: 7c352433-e3fa-43a6-a15b-84cd11edff89
+[undefined Android #0-0]
+[undefined Android #0-0] » /test/specs/example.e2e.js
+[undefined Android #0-0] My Login application
+[undefined Android #0-0]    ✖ opens the app in the android phone2
+[undefined Android #0-0]
+[undefined Android #0-0] 1 failing (20.8s)
+[undefined Android #0-0]
+[undefined Android #0-0] 1) My Login application opens the app in the android phone2
+[undefined Android #0-0] Can't call click on element with selector "//*[@resource-id="profileButton"]" because element wasn't found
+[undefined Android #0-0] Error: Can't call click on element with selector "//*[@resource-id="profileButton"]" because element wasn't found
+[undefined Android #0-0]     at async Context.<anonymous> (/Users/plahota/Desktop/Customers/Jaguar/wdio-appium/test/specs/example.e2e.js:106:9)
+
+
+Spec Files:	 0 passed, 1 failed, 1 total (100% completed) in 00:00:31 
+
+2023-05-14T10:59:16.176Z INFO @wdio/local-runner: Shutting down spawned worker
+2023-05-14T10:59:16.428Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
+2023-05-14T10:59:16.429Z INFO @wdio/local-runner: shutting down

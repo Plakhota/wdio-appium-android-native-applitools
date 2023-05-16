@@ -1,0 +1,650 @@
+
+Execution of 1 workers started at 2023-05-14T11:02:45.076Z
+
+2023-05-14T11:02:45.094Z INFO @wdio/cli:launcher: Run onPrepare hook
+2023-05-14T11:02:45.675Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2023-05-14T11:02:45.676Z INFO @wdio/local-runner: Start worker 0-0 with arg: 
+[0-0] 2023-05-14T11:02:46.380Z INFO @wdio/local-runner: Run worker command: run
+[0-0] RUNNING in Android - file:///test/specs/example.e2e.js
+[0-0] 2023-05-14T11:02:47.215Z INFO webdriver: Initiate new session using the WebDriver protocol
+[0-0] 2023-05-14T11:02:47.279Z INFO webdriver: [POST] http://127.0.0.1:4723/session
+[0-0] 2023-05-14T11:02:47.279Z INFO webdriver: DATA {
+[0-0]   capabilities: {
+[0-0]     alwaysMatch: {
+[0-0]       platformName: 'Android',
+[0-0]       browserName: '',
+[0-0]       'appium:autoGrantPermissions': true,
+[0-0]       'appium:deviceName': 'emulator-5554',
+[0-0]       'appium:appPackage': 'com.jaguarlandrover.rangerover.app',
+[0-0]       'appium:appActivity': 'com.jaguarlandrover.app.main.MainActivity',
+[0-0]       'appium:automationName': 'UiAutomator2'
+[0-0]     },
+[0-0]     firstMatch: [ {} ]
+[0-0]   },
+[0-0]   desiredCapabilities: {
+[0-0]     platformName: 'Android',
+[0-0]     browserName: '',
+[0-0]     'appium:autoGrantPermissions': true,
+[0-0]     'appium:deviceName': 'emulator-5554',
+[0-0]     'appium:appPackage': 'com.jaguarlandrover.rangerover.app',
+[0-0]     'appium:appActivity': 'com.jaguarlandrover.app.main.MainActivity',
+[0-0]     'appium:automationName': 'UiAutomator2'
+[0-0]   }
+[0-0] }
+[0-0] 2023-05-14T11:02:53.170Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2023-05-14T11:02:53.170Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:02:53.170Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T11:02:53.222Z INFO webdriver: Retrying 1/3
+[0-0] 2023-05-14T11:02:53.223Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:02:53.223Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T11:02:53.237Z INFO webdriver: Retrying 2/3
+[0-0] 2023-05-14T11:02:53.237Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:02:53.237Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T11:02:53.243Z INFO webdriver: Retrying 3/3
+[0-0] 2023-05-14T11:02:53.243Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:02:53.243Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T11:02:54.592Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2023-05-14T11:02:54.595Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:02:54.595Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T11:02:54.602Z INFO webdriver: Retrying 1/3
+[0-0] 2023-05-14T11:02:54.602Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:02:54.602Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T11:02:54.608Z INFO webdriver: Retrying 2/3
+[0-0] 2023-05-14T11:02:54.608Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:02:54.608Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T11:02:54.614Z INFO webdriver: Retrying 3/3
+[0-0] 2023-05-14T11:02:54.614Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:02:54.614Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T11:02:54.622Z INFO webdriver: COMMAND getSession()
+[0-0] 2023-05-14T11:02:54.622Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d
+[0-0] 2023-05-14T11:02:54.634Z INFO webdriver: RESULT {
+[0-0]   platform: 'LINUX',
+[0-0]   webStorageEnabled: false,
+[0-0]   takesScreenshot: true,
+[0-0]   javascriptEnabled: true,
+[0-0]   databaseEnabled: false,
+[0-0]   networkConnectionEnabled: true,
+[0-0]   locationContextEnabled: false,
+[0-0]   warnings: {},
+[0-0]   desired: {
+[0-0]     platformName: 'Android',
+[0-0]     browserName: '',
+[0-0]     autoGrantPermissions: true,
+[0-0]     deviceName: 'emulator-5554',
+[0-0]     appPackage: 'com.jaguarlandrover.rangerover.app',
+[0-0]     appActivity: 'com.jaguarlandrover.app.main.MainActivity',
+[0-0]     automationName: 'UiAutomator2'
+[0-0]   },
+[0-0]   platformName: 'Android',
+[0-0]   browserName: '',
+[0-0]   autoGrantPermissions: true,
+[0-0]   deviceName: 'emulator-5554',
+[0-0]   appPackage: 'com.jaguarlandrover.rangerover.app',
+[0-0]   appActivity: 'com.jaguarlandrover.app.main.MainActivity',
+[0-0]   automationName: 'UiAutomator2',
+[0-0]   deviceUDID: 'emulator-5554',
+[0-0]   deviceApiLevel: 33,
+[0-0]   platformVersion: '13',
+[0-0]   deviceScreenSize: '1080x1920',
+[0-0]   deviceScreenDensity: 420,
+[0-0]   deviceModel: 'sdk_gphone64_x86_64',
+[0-0]   deviceManufacturer: 'Google',
+[0-0]   pixelRatio: 2.625,
+[0-0]   statBarHeight: 63,
+[0-0]   viewportRect: { left: 0, top: 63, width: 1080, height: 1794 },
+[0-0]   lastScrollData: null
+[0-0] }
+[0-0] 2023-05-14T11:02:54.635Z INFO webdriver: COMMAND getContext()
+[0-0] 2023-05-14T11:02:54.636Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/context
+[0-0] 2023-05-14T11:02:54.639Z INFO webdriver: RESULT NATIVE_APP
+[0-0] 2023-05-14T11:02:54.640Z INFO webdriver: COMMAND executeScript("mobile:shell", <object>)
+[0-0] 2023-05-14T11:02:54.641Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:02:54.641Z INFO webdriver: DATA {
+[0-0]   script: 'mobile:shell',
+[0-0]   args: [
+[0-0]     {
+[0-0]       command: "dumpsys window | grep 'mCurrentRotation' | cut -d = -f2"
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2023-05-14T11:02:54.653Z INFO webdriver: Retrying 1/3
+[0-0] 2023-05-14T11:02:54.654Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:02:54.654Z INFO webdriver: DATA {
+[0-0]   script: 'mobile:shell',
+[0-0]   args: [
+[0-0]     {
+[0-0]       command: "dumpsys window | grep 'mCurrentRotation' | cut -d = -f2"
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2023-05-14T11:02:54.659Z INFO webdriver: Retrying 2/3
+[0-0] 2023-05-14T11:02:54.659Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:02:54.659Z INFO webdriver: DATA {
+[0-0]   script: 'mobile:shell',
+[0-0]   args: [
+[0-0]     {
+[0-0]       command: "dumpsys window | grep 'mCurrentRotation' | cut -d = -f2"
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2023-05-14T11:02:54.664Z INFO webdriver: Retrying 3/3
+[0-0] 2023-05-14T11:02:54.664Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:02:54.664Z INFO webdriver: DATA {
+[0-0]   script: 'mobile:shell',
+[0-0]   args: [
+[0-0]     {
+[0-0]       command: "dumpsys window | grep 'mCurrentRotation' | cut -d = -f2"
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2023-05-14T11:02:54.670Z INFO webdriver: COMMAND getOrientation()
+[0-0] 2023-05-14T11:02:54.670Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/orientation
+[0-0] 2023-05-14T11:02:54.737Z INFO webdriver: RESULT PORTRAIT
+[0-0] 2023-05-14T11:02:54.738Z INFO webdriver: COMMAND getWindowRect()
+[0-0] 2023-05-14T11:02:54.738Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/window/rect
+[0-0] 2023-05-14T11:02:54.746Z INFO webdriver: RESULT { width: 1080, height: 1857, x: 0, y: 0 }
+[0-0] 2023-05-14T11:02:54.746Z INFO webdriver: COMMAND getSystemBars()
+[0-0] 2023-05-14T11:02:54.746Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/appium/device/system_bars
+[0-0] 2023-05-14T11:02:54.822Z INFO webdriver: RESULT {
+[0-0]   statusBar: { visible: true, x: 0, y: 0, width: null, height: 1 },
+[0-0]   navigationBar: { visible: true, x: 0, y: 0, width: null, height: 1 }
+[0-0] }
+[0-0] 2023-05-14T11:02:58.085Z INFO webdriver: COMMAND findElement("xpath", "//*[contains(@text,"LOGIN")]")
+[0-0] 2023-05-14T11:02:58.086Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element
+[0-0] 2023-05-14T11:02:58.086Z INFO webdriver: DATA { using: 'xpath', value: '//*[contains(@text,"LOGIN")]' }
+[0-0] 2023-05-14T11:02:58.279Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-01b2-0000-002600000007',
+[0-0]   ELEMENT: '00000000-0000-01b2-0000-002600000007'
+[0-0] }
+[0-0] 2023-05-14T11:02:58.285Z INFO webdriver: COMMAND elementClick("00000000-0000-01b2-0000-002600000007")
+[0-0] 2023-05-14T11:02:58.285Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element/00000000-0000-01b2-0000-002600000007/click
+[0-0] 2023-05-14T11:02:59.366Z INFO webdriver: RESULT null
+[0-0] 2023-05-14T11:02:59.366Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="profileButton"]")
+[0-0] 2023-05-14T11:02:59.367Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element
+[0-0] 2023-05-14T11:02:59.367Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="profileButton"]' }
+[0-0] 2023-05-14T11:03:00.084Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/plahota/Desktop/Customers/Jaguar/wdio-appium/node_modules/appium/node_modules/appium-android-driver/lib/commands/find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/plahota/Desktop/Customers/Jaguar/wdio-appium/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/plahota/Desktop/Customers/Jaguar/wdio-appium/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:53:10)'
+[0-0] }
+[0-0] 2023-05-14T11:03:00.088Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="profileButton"]")
+[0-0] 2023-05-14T11:03:00.088Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/elements
+[0-0] 2023-05-14T11:03:00.088Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="profileButton"]' }
+[0-0] 2023-05-14T11:03:00.565Z INFO webdriver: RESULT []
+[0-0] 2023-05-14T11:03:00.590Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="profileButton"]")
+[0-0] 2023-05-14T11:03:00.590Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/elements
+[0-0] 2023-05-14T11:03:00.590Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="profileButton"]' }
+[0-0] 2023-05-14T11:03:00.622Z INFO webdriver: RESULT []
+[0-0] 2023-05-14T11:03:01.087Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="profileButton"]")
+[0-0] 2023-05-14T11:03:01.088Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/elements
+[0-0] 2023-05-14T11:03:01.088Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="profileButton"]' }
+[0-0] 2023-05-14T11:03:01.855Z INFO webdriver: RESULT [
+[0-0]   {
+[0-0]     'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-01b2-0000-005c00000007',
+[0-0]     ELEMENT: '00000000-0000-01b2-0000-005c00000007'
+[0-0]   }
+[0-0] ]
+[0-0] 2023-05-14T11:03:01.858Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="profileButton"]")
+[0-0] 2023-05-14T11:03:01.858Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element
+[0-0] 2023-05-14T11:03:01.859Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="profileButton"]' }
+[0-0] 2023-05-14T11:03:01.895Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-01b2-0000-005c00000007',
+[0-0]   ELEMENT: '00000000-0000-01b2-0000-005c00000007'
+[0-0] }
+[0-0] 2023-05-14T11:03:01.898Z INFO webdriver: COMMAND elementClick("00000000-0000-01b2-0000-005c00000007")
+[0-0] 2023-05-14T11:03:01.899Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element/00000000-0000-01b2-0000-005c00000007/click
+[0-0] 2023-05-14T11:03:02.439Z INFO webdriver: RESULT null
+[0-0] 2023-05-14T11:03:02.440Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2023-05-14T11:03:02.441Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:03:02.441Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T11:03:02.445Z INFO webdriver: Retrying 1/3
+[0-0] 2023-05-14T11:03:02.445Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:03:02.445Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T11:03:02.450Z INFO webdriver: Retrying 2/3
+[0-0] 2023-05-14T11:03:02.451Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:03:02.451Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T11:03:02.463Z INFO webdriver: Retrying 3/3
+[0-0] 2023-05-14T11:03:02.463Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:03:02.463Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T11:03:02.476Z INFO webdriver: COMMAND getSession()
+[0-0] 2023-05-14T11:03:02.476Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d
+[0-0] 2023-05-14T11:03:02.512Z INFO webdriver: RESULT {
+[0-0]   platform: 'LINUX',
+[0-0]   webStorageEnabled: false,
+[0-0]   takesScreenshot: true,
+[0-0]   javascriptEnabled: true,
+[0-0]   databaseEnabled: false,
+[0-0]   networkConnectionEnabled: true,
+[0-0]   locationContextEnabled: false,
+[0-0]   warnings: {},
+[0-0]   desired: {
+[0-0]     platformName: 'Android',
+[0-0]     browserName: '',
+[0-0]     autoGrantPermissions: true,
+[0-0]     deviceName: 'emulator-5554',
+[0-0]     appPackage: 'com.jaguarlandrover.rangerover.app',
+[0-0]     appActivity: 'com.jaguarlandrover.app.main.MainActivity',
+[0-0]     automationName: 'UiAutomator2'
+[0-0]   },
+[0-0]   platformName: 'Android',
+[0-0]   browserName: '',
+[0-0]   autoGrantPermissions: true,
+[0-0]   deviceName: 'emulator-5554',
+[0-0]   appPackage: 'com.jaguarlandrover.rangerover.app',
+[0-0]   appActivity: 'com.jaguarlandrover.app.main.MainActivity',
+[0-0]   automationName: 'UiAutomator2',
+[0-0]   deviceUDID: 'emulator-5554',
+[0-0]   deviceApiLevel: 33,
+[0-0]   platformVersion: '13',
+[0-0]   deviceScreenSize: '1080x1920',
+[0-0]   deviceScreenDensity: 420,
+[0-0]   deviceModel: 'sdk_gphone64_x86_64',
+[0-0]   deviceManufacturer: 'Google',
+[0-0]   pixelRatio: 2.625,
+[0-0]   statBarHeight: 63,
+[0-0]   viewportRect: { left: 0, top: 63, width: 1080, height: 1794 },
+[0-0]   lastScrollData: null
+[0-0] }
+[0-0] 2023-05-14T11:03:02.512Z INFO webdriver: COMMAND getContext()
+[0-0] 2023-05-14T11:03:02.512Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/context
+[0-0] 2023-05-14T11:03:02.515Z INFO webdriver: RESULT NATIVE_APP
+[0-0] 2023-05-14T11:03:02.516Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2023-05-14T11:03:02.516Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:03:02.516Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T11:03:02.521Z INFO webdriver: Retrying 1/3
+[0-0] 2023-05-14T11:03:02.521Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:03:02.521Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T11:03:02.526Z INFO webdriver: Retrying 2/3
+[0-0] 2023-05-14T11:03:02.526Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:03:02.526Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T11:03:02.531Z INFO webdriver: Retrying 3/3
+[0-0] 2023-05-14T11:03:02.531Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:03:02.531Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T11:03:02.536Z INFO webdriver: COMMAND getSession()
+[0-0] 2023-05-14T11:03:02.536Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d
+[0-0] 2023-05-14T11:03:02.546Z INFO webdriver: RESULT {
+[0-0]   platform: 'LINUX',
+[0-0]   webStorageEnabled: false,
+[0-0]   takesScreenshot: true,
+[0-0]   javascriptEnabled: true,
+[0-0]   databaseEnabled: false,
+[0-0]   networkConnectionEnabled: true,
+[0-0]   locationContextEnabled: false,
+[0-0]   warnings: {},
+[0-0]   desired: {
+[0-0]     platformName: 'Android',
+[0-0]     browserName: '',
+[0-0]     autoGrantPermissions: true,
+[0-0]     deviceName: 'emulator-5554',
+[0-0]     appPackage: 'com.jaguarlandrover.rangerover.app',
+[0-0]     appActivity: 'com.jaguarlandrover.app.main.MainActivity',
+[0-0]     automationName: 'UiAutomator2'
+[0-0]   },
+[0-0]   platformName: 'Android',
+[0-0]   browserName: '',
+[0-0]   autoGrantPermissions: true,
+[0-0]   deviceName: 'emulator-5554',
+[0-0]   appPackage: 'com.jaguarlandrover.rangerover.app',
+[0-0]   appActivity: 'com.jaguarlandrover.app.main.MainActivity',
+[0-0]   automationName: 'UiAutomator2',
+[0-0]   deviceUDID: 'emulator-5554',
+[0-0]   deviceApiLevel: 33,
+[0-0]   platformVersion: '13',
+[0-0]   deviceScreenSize: '1080x1920',
+[0-0]   deviceScreenDensity: 420,
+[0-0]   deviceModel: 'sdk_gphone64_x86_64',
+[0-0]   deviceManufacturer: 'Google',
+[0-0]   pixelRatio: 2.625,
+[0-0]   statBarHeight: 63,
+[0-0]   viewportRect: { left: 0, top: 63, width: 1080, height: 1794 },
+[0-0]   lastScrollData: null
+[0-0] }
+[0-0] 2023-05-14T11:03:02.546Z INFO webdriver: COMMAND getContext()
+[0-0] 2023-05-14T11:03:02.546Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/context
+[0-0] 2023-05-14T11:03:02.550Z INFO webdriver: RESULT NATIVE_APP
+[0-0] 2023-05-14T11:03:02.551Z INFO webdriver: COMMAND findElement("xpath", "//*[@scrollable="true"]")
+[0-0] 2023-05-14T11:03:02.551Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element
+[0-0] 2023-05-14T11:03:02.551Z INFO webdriver: DATA { using: 'xpath', value: '//*[@scrollable="true"]' }
+[0-0] 2023-05-14T11:03:02.684Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-01b2-0000-006800000007',
+[0-0]   ELEMENT: '00000000-0000-01b2-0000-006800000007'
+[0-0] }
+[0-0] 2023-05-14T11:03:02.690Z INFO webdriver: COMMAND getElementAttribute("00000000-0000-01b2-0000-006800000007", "className")
+[0-0] 2023-05-14T11:03:02.690Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element/00000000-0000-01b2-0000-006800000007/attribute/className
+[0-0] 2023-05-14T11:03:02.826Z INFO webdriver: RESULT android.view.View
+[0-0] 2023-05-14T11:03:02.827Z INFO webdriver: COMMAND executeScript("mobile:shell", <object>)
+[0-0] 2023-05-14T11:03:02.827Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:03:02.827Z INFO webdriver: DATA {
+[0-0]   script: 'mobile:shell',
+[0-0]   args: [
+[0-0]     {
+[0-0]       command: "dumpsys window | grep 'mCurrentRotation' | cut -d = -f2"
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2023-05-14T11:03:02.830Z INFO webdriver: Retrying 1/3
+[0-0] 2023-05-14T11:03:02.830Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:03:02.831Z INFO webdriver: DATA {
+[0-0]   script: 'mobile:shell',
+[0-0]   args: [
+[0-0]     {
+[0-0]       command: "dumpsys window | grep 'mCurrentRotation' | cut -d = -f2"
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2023-05-14T11:03:02.835Z INFO webdriver: Retrying 2/3
+[0-0] 2023-05-14T11:03:02.835Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:03:02.835Z INFO webdriver: DATA {
+[0-0]   script: 'mobile:shell',
+[0-0]   args: [
+[0-0]     {
+[0-0]       command: "dumpsys window | grep 'mCurrentRotation' | cut -d = -f2"
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2023-05-14T11:03:02.838Z INFO webdriver: Retrying 3/3
+[0-0] 2023-05-14T11:03:02.838Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:03:02.838Z INFO webdriver: DATA {
+[0-0]   script: 'mobile:shell',
+[0-0]   args: [
+[0-0]     {
+[0-0]       command: "dumpsys window | grep 'mCurrentRotation' | cut -d = -f2"
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2023-05-14T11:03:02.843Z INFO webdriver: COMMAND getOrientation()
+[0-0] 2023-05-14T11:03:02.843Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/orientation
+[0-0] 2023-05-14T11:03:02.850Z INFO webdriver: RESULT PORTRAIT
+[0-0] 2023-05-14T11:03:02.850Z INFO webdriver: COMMAND getWindowRect()
+[0-0] 2023-05-14T11:03:02.850Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/window/rect
+[0-0] 2023-05-14T11:03:02.856Z INFO webdriver: RESULT { width: 1080, height: 1857, x: 0, y: 0 }
+[0-0] 2023-05-14T11:03:02.856Z INFO webdriver: COMMAND getSystemBars()
+[0-0] 2023-05-14T11:03:02.856Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/appium/device/system_bars
+[0-0] 2023-05-14T11:03:02.913Z INFO webdriver: RESULT {
+[0-0]   statusBar: { visible: true, x: 0, y: 0, width: null, height: 1 },
+[0-0]   navigationBar: { visible: true, x: 0, y: 0, width: null, height: 1 }
+[0-0] }
+[0-0] 2023-05-14T11:03:12.915Z INFO webdriver: COMMAND findElement("xpath", "//*[@content-desc="EyesAppiumHelperEDT"]")
+[0-0] 2023-05-14T11:03:12.916Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element
+[0-0] 2023-05-14T11:03:12.916Z INFO webdriver: DATA { using: 'xpath', value: '//*[@content-desc="EyesAppiumHelperEDT"]' }
+[0-0] 2023-05-14T11:03:12.995Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-01b2-ffff-ffff00000022',
+[0-0]   ELEMENT: '00000000-0000-01b2-ffff-ffff00000022'
+[0-0] }
+[0-0] 2023-05-14T11:03:12.998Z INFO webdriver: COMMAND findElement("xpath", "//*[@content-desc="EyesAppiumHelper_Version"]")
+[0-0] 2023-05-14T11:03:12.998Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element
+[0-0] 2023-05-14T11:03:12.998Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//*[@content-desc="EyesAppiumHelper_Version"]'
+[0-0] }
+[0-0] 2023-05-14T11:03:13.054Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-01b2-ffff-ffff00000023',
+[0-0]   ELEMENT: '00000000-0000-01b2-ffff-ffff00000023'
+[0-0] }
+[0-0] 2023-05-14T11:03:13.059Z INFO webdriver: COMMAND getElementText("00000000-0000-01b2-ffff-ffff00000023")
+[0-0] 2023-05-14T11:03:13.059Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element/00000000-0000-01b2-ffff-ffff00000023/text
+[0-0] 2023-05-14T11:03:13.069Z INFO webdriver: RESULT 1.8.9
+[0-0] 2023-05-14T11:03:13.069Z INFO webdriver: COMMAND findElement("xpath", "//*[@content-desc="EyesAppiumHelper_Action"]")
+[0-0] 2023-05-14T11:03:13.070Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element
+[0-0] 2023-05-14T11:03:13.070Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//*[@content-desc="EyesAppiumHelper_Action"]'
+[0-0] }
+[0-0] 2023-05-14T11:03:13.122Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-01b2-ffff-ffff00000024',
+[0-0]   ELEMENT: '00000000-0000-01b2-ffff-ffff00000024'
+[0-0] }
+[0-0] 2023-05-14T11:03:13.125Z INFO webdriver: COMMAND getElementAttribute("00000000-0000-01b2-0000-006800000007", "resource-id")
+[0-0] 2023-05-14T11:03:13.125Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element/00000000-0000-01b2-0000-006800000007/attribute/resource-id
+[0-0] 2023-05-14T11:03:13.136Z INFO webdriver: RESULT null
+[0-0] 2023-05-14T11:03:13.136Z INFO webdriver: COMMAND getElementAttribute("00000000-0000-01b2-0000-006800000007", "contentSize")
+[0-0] 2023-05-14T11:03:13.136Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element/00000000-0000-01b2-0000-006800000007/attribute/contentSize
+[0-0] 2023-05-14T11:03:40.681Z INFO webdriver: Retrying 1/3
+[0-0] 2023-05-14T11:03:40.681Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element/00000000-0000-01b2-0000-006800000007/attribute/contentSize
+[0-0] 2023-05-14T11:03:55.300Z INFO webdriver: Retrying 2/3
+[0-0] 2023-05-14T11:03:55.300Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element/00000000-0000-01b2-0000-006800000007/attribute/contentSize
+[0-0] 2023-05-14T11:04:09.948Z INFO webdriver: Retrying 3/3
+[0-0] 2023-05-14T11:04:09.948Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element/00000000-0000-01b2-0000-006800000007/attribute/contentSize
+[0-0] 2023-05-14T11:04:24.682Z INFO webdriver: COMMAND getElementAttribute("00000000-0000-01b2-0000-006800000007", "resource-id")
+[0-0] 2023-05-14T11:04:24.682Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element/00000000-0000-01b2-0000-006800000007/attribute/resource-id
+[0-0] 2023-05-14T11:04:24.694Z INFO webdriver: RESULT null
+[0-0] 2023-05-14T11:04:24.697Z INFO webdriver: COMMAND getElementRect("00000000-0000-01b2-0000-006800000007")
+[0-0] 2023-05-14T11:04:24.698Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element/00000000-0000-01b2-0000-006800000007/rect
+[0-0] 2023-05-14T11:04:24.717Z INFO webdriver: RESULT { height: 1794, width: 1080, x: 0, y: 63 }
+[0-0] 2023-05-14T11:04:24.717Z INFO webdriver: COMMAND getElementRect("00000000-0000-01b2-0000-006800000007")
+[0-0] 2023-05-14T11:04:24.717Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element/00000000-0000-01b2-0000-006800000007/rect
+[0-0] 2023-05-14T11:04:24.729Z INFO webdriver: RESULT { height: 1794, width: 1080, x: 0, y: 63 }
+[0-0] 2023-05-14T11:04:24.729Z INFO webdriver: COMMAND takeScreenshot()
+[0-0] 2023-05-14T11:04:24.730Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/screenshot
+[0-0] 2023-05-14T11:04:25.019Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAABDgAAAeACAYAAAArYecKAAAAAXNSR0IArs4c6...
+[0-0] 2023-05-14T11:04:25.024Z INFO webdriver: COMMAND getElementRect("00000000-0000-01b2-0000-006800000007")
+[0-0] 2023-05-14T11:04:25.024Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element/00000000-0000-01b2-0000-006800000007/rect
+[0-0] 2023-05-14T11:04:25.038Z INFO webdriver: RESULT { height: 1794, width: 1080, x: 0, y: 63 }
+[0-0] 2023-05-14T11:04:25.038Z INFO webdriver: COMMAND getElementRect("00000000-0000-01b2-0000-006800000007")
+[0-0] 2023-05-14T11:04:25.039Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element/00000000-0000-01b2-0000-006800000007/rect
+[0-0] 2023-05-14T11:04:25.050Z INFO webdriver: RESULT { height: 1794, width: 1080, x: 0, y: 63 }
+[0-0] 2023-05-14T11:04:25.058Z INFO webdriver: COMMAND getElementRect("00000000-0000-01b2-0000-006800000007")
+[0-0] 2023-05-14T11:04:25.058Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element/00000000-0000-01b2-0000-006800000007/rect
+[0-0] 2023-05-14T11:04:25.075Z INFO webdriver: RESULT { height: 1794, width: 1080, x: 0, y: 63 }
+[0-0] 2023-05-14T11:04:25.075Z INFO webdriver: COMMAND getElementRect("00000000-0000-01b2-0000-006800000007")
+[0-0] 2023-05-14T11:04:25.075Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element/00000000-0000-01b2-0000-006800000007/rect
+[0-0] 2023-05-14T11:04:25.088Z INFO webdriver: RESULT { height: 1794, width: 1080, x: 0, y: 63 }
+[0-0] 2023-05-14T11:04:25.093Z INFO webdriver: COMMAND getElementRect("00000000-0000-01b2-0000-006800000007")
+[0-0] 2023-05-14T11:04:25.093Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element/00000000-0000-01b2-0000-006800000007/rect
+[0-0] 2023-05-14T11:04:25.105Z INFO webdriver: RESULT { height: 1794, width: 1080, x: 0, y: 63 }
+[0-0] 2023-05-14T11:04:25.105Z INFO webdriver: COMMAND getElementRect("00000000-0000-01b2-0000-006800000007")
+[0-0] 2023-05-14T11:04:25.106Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element/00000000-0000-01b2-0000-006800000007/rect
+[0-0] 2023-05-14T11:04:25.117Z INFO webdriver: RESULT { height: 1794, width: 1080, x: 0, y: 63 }
+[0-0] 2023-05-14T11:04:25.120Z INFO webdriver: COMMAND elementClear("00000000-0000-01b2-ffff-ffff00000022")
+[0-0] 2023-05-14T11:04:25.120Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element/00000000-0000-01b2-ffff-ffff00000022/clear
+[0-0] 2023-05-14T11:04:25.137Z INFO webdriver: RESULT null
+[0-0] 2023-05-14T11:04:25.137Z INFO webdriver: COMMAND elementSendKeys("00000000-0000-01b2-ffff-ffff00000022", "getTouchPadding;0;0;0;0;0")
+[0-0] 2023-05-14T11:04:25.138Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element/00000000-0000-01b2-ffff-ffff00000022/value
+[0-0] 2023-05-14T11:04:25.138Z INFO webdriver: DATA { text: 'getTouchPadding;0;0;0;0;0' }
+[0-0] 2023-05-14T11:04:25.667Z INFO webdriver: RESULT null
+[0-0] 2023-05-14T11:04:25.669Z INFO webdriver: COMMAND elementClick("00000000-0000-01b2-ffff-ffff00000022")
+[0-0] 2023-05-14T11:04:25.670Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element/00000000-0000-01b2-ffff-ffff00000022/click
+[0-0] 2023-05-14T11:04:26.279Z INFO webdriver: RESULT null
+[0-0] 2023-05-14T11:04:26.282Z INFO webdriver: COMMAND getElementText("00000000-0000-01b2-ffff-ffff00000022")
+[0-0] 2023-05-14T11:04:26.282Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element/00000000-0000-01b2-ffff-ffff00000022/text
+[0-0] 2023-05-14T11:04:26.881Z INFO webdriver: RESULT 21
+[0-0] 2023-05-14T11:04:26.883Z INFO webdriver: COMMAND getElementRect("00000000-0000-01b2-0000-006800000007")
+[0-0] 2023-05-14T11:04:26.883Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element/00000000-0000-01b2-0000-006800000007/rect
+[0-0] 2023-05-14T11:04:26.895Z INFO webdriver: RESULT { height: 1794, width: 1080, x: 0, y: 63 }
+[0-0] 2023-05-14T11:04:26.895Z INFO webdriver: COMMAND getElementRect("00000000-0000-01b2-0000-006800000007")
+[0-0] 2023-05-14T11:04:26.895Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element/00000000-0000-01b2-0000-006800000007/rect
+[0-0] 2023-05-14T11:04:26.906Z INFO webdriver: RESULT { height: 1794, width: 1080, x: 0, y: 63 }
+[0-0] 2023-05-14T11:04:26.908Z INFO webdriver: COMMAND getElementRect("00000000-0000-01b2-0000-006800000007")
+[0-0] 2023-05-14T11:04:26.909Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element/00000000-0000-01b2-0000-006800000007/rect
+[0-0] 2023-05-14T11:04:26.920Z INFO webdriver: RESULT { height: 1794, width: 1080, x: 0, y: 63 }
+[0-0] 2023-05-14T11:04:26.920Z INFO webdriver: COMMAND getElementRect("00000000-0000-01b2-0000-006800000007")
+[0-0] 2023-05-14T11:04:26.920Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/element/00000000-0000-01b2-0000-006800000007/rect
+[0-0] 2023-05-14T11:04:26.930Z INFO webdriver: RESULT { height: 1794, width: 1080, x: 0, y: 63 }
+[0-0] 2023-05-14T11:04:36.931Z INFO webdriver: COMMAND takeScreenshot()
+[0-0] 2023-05-14T11:04:36.931Z INFO webdriver: [GET] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/screenshot
+[0-0] 2023-05-14T11:04:37.200Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAABDgAAAeACAYAAAArYecKAAAAAXNSR0IArs4c6...
+[0-0] 2023-05-14T11:04:42.448Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2023-05-14T11:04:42.448Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:04:42.449Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T11:04:42.454Z INFO webdriver: Retrying 1/3
+[0-0] 2023-05-14T11:04:42.454Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:04:42.454Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T11:04:42.457Z INFO webdriver: Retrying 2/3
+[0-0] 2023-05-14T11:04:42.457Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:04:42.457Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T11:04:42.464Z INFO webdriver: Retrying 3/3
+[0-0] 2023-05-14T11:04:42.464Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:04:42.464Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document||"root-context"===window.document["applitools-marker"]}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2023-05-14T11:04:42.474Z INFO webdriver: COMMAND executeScript("applitools:metadata", <object>)
+[0-0] 2023-05-14T11:04:42.474Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:04:42.474Z INFO webdriver: DATA { script: 'applitools:metadata', args: [ undefined ] }
+[0-0] 2023-05-14T11:04:42.482Z INFO webdriver: Retrying 1/3
+[0-0] 2023-05-14T11:04:42.482Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:04:42.482Z INFO webdriver: DATA { script: 'applitools:metadata', args: [ undefined ] }
+[0-0] 2023-05-14T11:04:42.490Z INFO webdriver: Retrying 2/3
+[0-0] 2023-05-14T11:04:42.490Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:04:42.490Z INFO webdriver: DATA { script: 'applitools:metadata', args: [ undefined ] }
+[0-0] 2023-05-14T11:04:42.498Z INFO webdriver: Retrying 3/3
+[0-0] 2023-05-14T11:04:42.498Z INFO webdriver: [POST] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d/execute/sync
+[0-0] 2023-05-14T11:04:42.498Z INFO webdriver: DATA { script: 'applitools:metadata', args: [ undefined ] }
+[0-0] TestResultsSummaryData {
+[0-0]   _summary: {
+[0-0]     results: [ [Object] ],
+[0-0]     passed: 0,
+[0-0]     unresolved: 1,
+[0-0]     failed: 0,
+[0-0]     exceptions: 1,
+[0-0]     mismatches: 1,
+[0-0]     missing: 0,
+[0-0]     matches: 0
+[0-0]   },
+[0-0]   _deleteTest: [Function: deleteTest]
+[0-0] }
+[0-0] 2023-05-14T11:04:46.292Z INFO webdriver: COMMAND deleteSession()
+[0-0] 2023-05-14T11:04:46.293Z INFO webdriver: [DELETE] http://127.0.0.1:4723/session/bc371542-2b00-4efc-9d9b-41c94beb6c9d
+[0-0] 2023-05-14T11:04:46.553Z INFO webdriver: RESULT null
+[0-0] PASSED in Android - file:///test/specs/example.e2e.js
+2023-05-14T11:04:46.675Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2023-05-14T11:04:46.693Z INFO @wdio/cli:launcher: Run onComplete hook
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[undefined Android #0-0] Running: undefined on Android
+[undefined Android #0-0] Session ID: bc371542-2b00-4efc-9d9b-41c94beb6c9d
+[undefined Android #0-0]
+[undefined Android #0-0] » /test/specs/example.e2e.js
+[undefined Android #0-0] My Login application
+[undefined Android #0-0]    ✓ opens the app in the android phone2
+[undefined Android #0-0]
+[undefined Android #0-0] 1 passing (1m 53.3s)
+
+
+Spec Files:	 1 passed, 1 total (100% completed) in 00:02:01 
+
+2023-05-14T11:04:46.732Z INFO @wdio/local-runner: Shutting down spawned worker
+2023-05-14T11:04:46.983Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
+2023-05-14T11:04:46.983Z INFO @wdio/local-runner: shutting down

@@ -1,129 +1,132 @@
-'use strict';
+"use strict";
 
 const {
-
-    EyesRunner,
   ClassicRunner,
-  
+  AccessibilityGuidelinesVersion,
+  VisualLocatorSettings,
+  AccessibilityLevel,
+  AccessibilityStatus,
+  Eyes,
+  Target,
+  Configuration,
+  BatchInfo,
+  MatchLevel,
+} = require("@applitools/eyes-webdriverio");
 
-    Eyes,
-    Target,
-    RectangleSize,
-    Configuration,
-    BatchInfo, 
-    BrowserType,
-    By} = require('@applitools/eyes-webdriverio');
+const assert = require("assert");
 
-describe('My Login application', () => {
+describe("My Login application", () => {
+  let applitoolsApiKey;
 
-    var applitoolsApiKey;
+  // Applitools objects to share for all tests
+  let batch;
+  let config;
+  let runner;
 
-    // Applitools objects to share for all tests
-    let batch;
-    let config;
-    let runner;
-  
-    // Test-specific objects
-    let eyes;
+  // Test-specific objects
+  let eyes;
 
-    
-
-    before(async () => {
-        applitoolsApiKey = process.env.APPLITOOLS_API_KEY;
+  before(async () => {
+    applitoolsApiKey = process.env.APPLITOOLS_API_KEY;
 
     // Create the classic runner.
-         runner = new ClassicRunner();
+    runner = new ClassicRunner();
 
     // Create a new batch for tests.
     // A batch is the collection of visual checkpoints for a test suite.
     // Batches are displayed in the Eyes Test Manager, so use meaningful names.
-         batch = new BatchInfo('Example: WebdriverIO JavaScript with the Classic Runner');
+    batch = new BatchInfo(
+      "JLR Example: WebdriverIO JavaScript with the Classic Runner"
+    );
 
     // Create a configuration for Applitools Eyes.
-         config = new Configuration();
-    
+    config = new Configuration();
+
+    //https://applitools.com/docs/features/contrast-accessibility.html
+    config.setAccessibilityValidation({
+      level: AccessibilityLevel.AAA,
+      guidelinesVersion: AccessibilityGuidelinesVersion.WCAG_2_1,
+    });
+
     // Set the Applitools API key so test results are uploaded to your account.
     // If you don't explicitly set the API key with this call,
     // then the SDK will automatically read the `APPLITOOLS_API_KEY` environment variable to fetch it.
-         config.setApiKey(applitoolsApiKey);
+    config.setApiKey(applitoolsApiKey);
 
     // Set the batch for the config.
-            config.setBatch(batch);
+    config.setBatch(batch);
+  });
 
-
-    });
-
-      
   beforeEach(async function () {
-    // This method sets up each test with its own ChromeDriver and Applitools Eyes objects.
-    
     // Create the Applitools Eyes object connected to the runner and set its configuration.
     eyes = new Eyes(runner);
     eyes.setConfiguration(config);
 
-    // Open Eyes to start visual testing.
-    // It is a recommended practice to set all four inputs:
-
-    // const mydevice =  await device.launchApp();
-
-
-    await eyes.open(browser, 'Example: WebdriverIO JavaScript with the Classic Runner', this.currentTest.title);
-    
+    await eyes.open(
+      browser,
+      "Example: WebdriverIO JavaScript with the Classic Runner",
+      this.currentTest.title
+    );
   });
 
+  //A basic app flow test
+  it("opens the app in the android phone2", async () => {
+    const loginXPATH = '//*[@resource-id="loginButton"]';
 
-//   it('opens the app in the android phone1', async () => {
-//         await eyes.check('Login Window', Target.window().fully(false));  
+    await eyes.check(
+      Target.window().fully(false).withName("Login screen").ignore(loginXPATH)
+    );
+    //Click the login button xpath = //*[contains(@text,"LOGIN")]
+    await browser.$(loginXPATH).click();
 
-//     })
+    // browser.waitUntil(() => browser.$('//android.widget.ImageView[@content-desc="My Vehicle"]'), {timeout: 5000});
 
+    await eyes.check(
+      "After login",
+      Target.window()
+        .fully(false)
+        .waitBeforeCapture(5000)
+        .matchLevel(MatchLevel.Layout)
+    );
 
-    it('opens the app in the android phone2', async () => {
-      //[{"key":"elementId","value":"00000000-0000-00d4-3b9a-ca2400000007","name":"elementId"},{"key":"index","value":"2","name":"index"},{"key":"package","value":"com.jaguarlandrover.rangerover.app","name":"package"},{"key":"class","value":"android.widget.Button","name":"class"},{"key":"text","value":"","name":"text"},{"key":"checkable","value":"false","name":"checkable"},{"key":"checked","value":"false","name":"checked"},{"key":"clickable","value":"false","name":"clickable"},{"key":"enabled","value":"true","name":"enabled"},{"key":"focusable","value":"false","name":"focusable"},{"key":"focused","value":"false","name":"focused"},{"key":"long-clickable","value":"false","name":"long-clickable"},{"key":"password","value":"false","name":"password"},{"key":"scrollable","value":"false","name":"scrollable"},{"key":"selected","value":"false","name":"selected"},{"key":"bounds","value":"[901,74][1069,200]","name":"bounds"},{"key":"displayed","value":"true","name":"displayed"}]
+    //Fetch profile button using Applitools Visual Locator and click
+    const regionsMap = await eyes.locate({ locatorNames: ["profile"] });
+    const regionMapProfile = regionsMap["profile"];
+    await browser.touchAction([
+      { action: "press", x: regionMapProfile[0].x, y: regionMapProfile[0].y },
+      { action: "release" },
+    ]);
 
-      //Click the login button xpath = //*[contains(@text,"LOGIN")]
-      await browser.$('//*[contains(@text,"LOGIN")]').click();
+    //Validate the profile screen, regardless of the changes in Phone or number or Address.
+    const addressXpath = '//*[@resource-id="addressItem"]';
+    const phoneXpath = '//*[@resource-id="phoneItem"]';
+    await eyes.check(
+      "Profile screen",
+      Target.window()
+        .fully(true)
+        .waitBeforeCapture(5000)
+        .matchLevel(MatchLevel.Strict)
+        .layoutRegion(phoneXpath)
+        .layoutRegion(addressXpath)
+    );
+  }).timeout(10 * 60000);
 
-      //click on Allow to send notifications
+  afterEach(async () => {
+    // Close Eyes to tell the server it should display the results.
+    const testResult = await eyes.close();
+    console.log(testResults);
+    console.log(testResults.getAccessibilityStatus());
+    assert.equal(
+      testResult.getAccessibilityStatus().status,
+      AccessibilityStatus.Passed
+    );
+    // If you want the test to wait synchronously for all checkpoints to complete, then use `eyes.close()`.
+    // If any checkpoints are unresolved or failed, then `eyes.close()` will make the ACME demo app test fail.
+  });
 
-      //[{"key":"elementId","value":"00000000-0000-019d-0000-008c00000007","name":"elementId"},{"key":"index","value":"0","name":"index"},{"key":"package","value":"com.jaguarlandrover.rangerover.app","name":"package"},{"key":"class","value":"android.widget.ImageView","name":"class"},{"key":"text","value":"","name":"text"},{"key":"content-desc","value":"My Vehicle","name":"content-desc"},{"key":"checkable","value":"false","name":"checkable"},{"key":"checked","value":"false","name":"checked"},{"key":"clickable","value":"false","name":"clickable"},{"key":"enabled","value":"true","name":"enabled"},{"key":"focusable","value":"false","name":"focusable"},{"key":"focused","value":"false","name":"focused"},{"key":"long-clickable","value":"false","name":"long-clickable"},{"key":"password","value":"false","name":"password"},{"key":"scrollable","value":"false","name":"scrollable"},{"key":"selected","value":"false","name":"selected"},{"key":"bounds","value":"[126,467][954,1019]","name":"bounds"},{"key":"displayed","value":"true","name":"displayed"}]
-    //   $('//android.widget.ImageView[@content-desc="My Vehicle"]').waitForDisplayed({timeout: 7000});
-
-      await eyes.check(
-        "Login Window",
-        Target.window().fully(true)
-        // .waitBeforeCapture(1000)
-        );
-    })
-
-    // it('opens the app in the android phone1', async () => {
-    //     await eyes.check('Login Window', Target.window().fully(false));  
-
-    // })
-
-    afterEach(async () => {
-
-        // Close Eyes to tell the server it should display the results.
-       await eyes.close(false);
-        // const testResults = await eyes.close(false);
-        // console.log(testResults);
-    
-        // Quit the WebdriverIO instance
-    
-        // Warning: `eyes.closeAsync()` will NOT wait for visual checkpoints to complete.
-        // You will need to check the Eyes Test Manager for visual results per checkpoint.
-        // Note that "unresolved" and "failed" visual checkpoints will not cause the Mocha test to fail.
-    
-        // If you want the ACME demo app test to wait synchronously for all checkpoints to complete, then use `eyes.close()`.
-        // If any checkpoints are unresolved or failed, then `eyes.close()` will make the ACME demo app test fail.
-      });
-      
-      after(async () => {
-        // Close the batch and report visual differences to the console.
-        // Note that it forces Mocha to wait synchronously for all visual checkpoints to complete.
-        await runner.getAllTestResults(false).then(console.log);
-        
-      });
-      
-})
-
+  after(async () => {
+    // Close the batch and report visual differences to the console.
+    // Note that it forces Mocha to wait synchronously for all visual checkpoints to complete.
+    await runner.getAllTestResults(false).then(console.log);
+  });
+});
